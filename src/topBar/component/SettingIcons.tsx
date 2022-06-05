@@ -27,7 +27,20 @@ export default function SettingIcons() {
   const isLanguageMenuOpen = Boolean(anchorEl);
 
   const changeLanguage = (lang: string) => {
-    i18next.changeLanguage(lang);
+    // i18next.changeLanguage(lang);
+
+    const gtcombo = document.querySelector(".goog-te-combo");
+    if (gtcombo == null) {
+      alert("Error: Could not find Google translate Combolist.");
+      return false;
+    }
+    (gtcombo as any).value = lang; // 변경할 언어 적용
+    gtcombo.dispatchEvent(new Event("change"));
+    // if (lang === "en") {
+    // } else {
+    //   (gtcombo as any).value = null;
+    // }
+
     closeLanguageMenu();
   };
 
@@ -48,9 +61,18 @@ export default function SettingIcons() {
           colorMode.toggleColorMode();
         }}
       >
-        {colorMode.currentColormode === "light" ? <WbSunnyIcon /> : <Brightness2Icon />}
+        {colorMode.currentColormode === "light" ? (
+          <WbSunnyIcon />
+        ) : (
+          <Brightness2Icon />
+        )}
       </StyledIconButton>
-      <StyledIconButton aria-label="translate button" size="medium" edge="start" onClick={openLanguageMenu}>
+      <StyledIconButton
+        aria-label="translate button"
+        size="medium"
+        edge="start"
+        onClick={openLanguageMenu}
+      >
         <TranslateIcon />
       </StyledIconButton>
       <StyledIconButton aria-label="github button" size="medium" edge="start">

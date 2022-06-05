@@ -1,13 +1,15 @@
 import * as React from "react";
-import { useState, useEffect } from "react";
+
+import { useEffect, useState } from "react";
+
 import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Stack from "@mui/material/Stack";
 import SettingIcons from "./component/SettingIcons";
-import TopBarSectionItem from "./component/TopBarSectionItem";
-import useWindowDimensions from "src/utils/customHook/useWindowDimensions";
+import Stack from "@mui/material/Stack";
+import Toolbar from "@mui/material/Toolbar";
 import TopBarMenu from "./component/TopBarMenu";
+import TopBarSectionItem from "./component/TopBarSectionItem";
+import Typography from "@mui/material/Typography";
+import useWindowDimensions from "src/utils/customHook/useWindowDimensions";
 
 export default function TopBar() {
   const { width } = useWindowDimensions();
@@ -54,7 +56,12 @@ const VerticalMenu = () => {
 
 const HorizontalMenu = () => {
   return (
-    <Stack direction={"row"} justifyContent={"flex-start"} alignItems={"flex-start"} flex={1}>
+    <Stack
+      direction={"row"}
+      justifyContent={"flex-start"}
+      alignItems={"flex-start"}
+      flex={1}
+    >
       <div style={{ display: "flex" }}>
         <TopBarSectionItem to={"Intro"} />
         <TopBarSectionItem to={"Experience"} />

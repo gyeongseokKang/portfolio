@@ -2,10 +2,23 @@
   "namespace": "intro",
   "locale": {
     "en": {
-      "편리함을_추구하는_개발자": "Developer Seeking Convenience"
+      "편리함을_추구하는_개발자": "Developer Seeking Convenience",
+      "React_&_TypeScript_기반의_4년차_프론트엔드_개발자": "React & TypeScript 4 year front-end developer",
+      "나는_강경석입니다": "Gyeongseok Kang.",
+      "누적_다운로드수_10만건___": "100,000 cumulative downloads of mobility services, hyperdata from BI tools, I am developing and researching the front end in projects such as this.",
+      "현재는_연구원으로___": "Currently, as a researcher,I mainly design and implement front-end and analytical statistical techniques.",
+      "기술_공유의_중요성": "The Importance of Technology Sharing",
+      "프론트엔드의_개발생산성": "Development Productivity of FrontEnd"
     },
     "ko": {
-      "편리함을_추구하는_개발자": "편리함을 추구하는 개발자"
+      "편리함을_추구하는_개발자": "편리함을 추구하는 개발자",
+      "React_&_TypeScript_기반의_4년차_프론트엔드_개발자": "React & TypeScript 기반의 4년차 프론트엔드 개발자",
+      "나는_강경석입니다": "강경석입니다.",
+      "누적_다운로드수_10만건___": "누적 다운로드수 10만건의 모빌리티 서비스 카찹, BI툴의 하이퍼데이터 프로젝트에서 프론트엔드 개발 및 연구를 하고 있습니다.",
+      "현재는_연구원으로___": "현재는 연구원으로 프론트엔드, 분석 통계 기법에 대한 설계 및 구현을 주로 하고 있습니다.",
+
+      "기술_공유의_중요성": "기술 공유의 중요성",
+      "프론트엔드의_개발생산성": "프론트엔드의 개발생산성"
     }
   }
 }
